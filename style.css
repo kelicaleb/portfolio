@@ -1,0 +1,158 @@
+.design{
+    background-image:url(home.jpg);
+    height: 670px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+   
+    
+    
+}
+.skill{
+    background-image:url(skill.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 670px;
+    background-position: center;
+}
+.project{
+    background-image:url(project.jpg);
+    background-position: center;
+    height: 670px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   
+}
+.aboutme{
+    background-image:url(aboutme.jpg);
+    height: 770px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+   
+    
+}
+.span2{
+    color:rgb(0, 0, 0);
+    font-style:normal;
+    padding-left: 7%;
+    padding-top: 2%;
+    font-size: 20px;
+
+  }
+.sp3{
+    padding-top:2%;
+}
+.sp4{
+    padding-top:2%;
+}
+.sp5{
+    padding-top:1%;
+}
+.ch{
+    color:rgb(0, 0, 0)
+}
+.img{
+    padding-left: 15%;
+    height: 500px;
+    width: 330px;
+    padding-top: 10%;
+    
+}
+.img2{
+    padding-left: 15%;
+    height: 300px;
+    width: 330px;
+    padding-top: 2%
+}
+.num1{
+    width: 70px;
+    height: 200px;
+    background-color:rgb(216, 216, 216);
+    background-size: 20%;
+    border-radius: 25px;
+    padding-left: 5%;
+    margin-left: 25px;
+    margin-right: 2px;
+    margin-top: 30px;
+}
+.num2{
+    width: 70px;
+    height: 200px;
+    background-color:rgb(216, 216, 216);
+    background-size: 20%;
+    border-radius: 25px;
+    padding-right: 5%;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+  
+
+.design2{
+    width: 570px;
+    height: 350px;
+    background-color:rgb(216, 216, 216);
+    background-size: 20%;
+    border-radius: 25px;
+    padding-left: 5%;
+    margin-left: 400px;
+    margin-right: 25px;
+  
+}
+.clo1{
+    width: 70px;
+    height: 200px;
+    background-color:rgb(216, 216, 216);
+    background-size: 20%;
+    border-radius: 25px;
+    padding-left: 5%;
+    margin-left: 25px;
+    margin-right: 2px;
+}
+.clo2{
+    width: 70px;
+    height: 250px;
+    background-color:rgb(216, 216, 216);
+    background-size: 20%;
+    border-radius: 25px;
+    padding-right: 5%;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+.hole{
+    width: 970px;
+    height: 70px;
+    background-color:rgb(216, 216, 216);
+    background-size: 20%;
+    border-radius: 25px;
+    padding-left: 2%;
+    margin-left: 220px;
+    margin-right: 25px;
+    margin-top: 30px;
+
+}
+.clo3{
+    width: 70px;
+    height: 500px;
+    background-color:rgb(216, 216, 216);
+    background-size: 20%;
+    border-radius: 25px;
+    padding-right: 5%;
+    margin-left: 25px;
+    margin-right: 95px;
+
+}
+.clo4{
+    width: 370px;
+    height: 350px;
+    background-color:rgb(216, 216, 216);
+    background-size: 20%;
+    border-radius: 25px;
+    padding-right: 5%;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
