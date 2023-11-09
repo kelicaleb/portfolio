@@ -1,20 +1,38 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { Routes, Route, Link}  from 'react-router-dom'
 import './App.css'
+import Home from './components/Home'
+import Nav from './components/Nav'
+import Profile from './components/Profile'
+import About from './components/About'
+import Contact from './components/Contact'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ let Component 
+ switch(window.location.pathname){
+  case"#Home":
+  Component = <Home/>
+  break
+  case"/Profile":
+  Component = <Profile/>
+  break
+  case"/Contact":
+  Component = <Contact/>
+  break
+ }
   return (
-    <>
-      <div>
-       <h1>Hello world</h1>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Home/>
+      <Profile id="Profile"/>
+      <About id="About"/>
+      <Contact id="Contact"/>
+      <Nav/>
+      {Component}
+    </div>
   )
 }
 
