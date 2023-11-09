@@ -102,7 +102,7 @@ function Nav(){
        </div>
   </div>
   </nav> 
-  { Component }
+  { Component}
     </>
   
   )
