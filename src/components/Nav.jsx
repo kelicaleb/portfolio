@@ -18,22 +18,12 @@ function Nav(){
   {
     setShow(!show)
   }
-  let Component 
-  switch(window.location.pathname){
-   case"/Home":
-   Component = <Home/>
-   break
-   case"/Profile":
-   Component = <Profile/>
-   break
-   case"/About":
-   Component = <About/>
-   break
-  }
+ 
+ 
   return(
   <>
  
-  <nav className="h-screen fixed top-0 left-0 right-0 ">
+  <nav className="fixed top-0 left-0 right-0 ">
          <div className="grid  gap-y-4 grid-cols-3 w-96">
     {
       show ?  
@@ -41,21 +31,21 @@ function Nav(){
       <div className="fixed top-0 left-0 right-0 ">
       <div className="control w-40">
             <ul>
-              <li className="pt-4"> <div className="firsticon group pt-2  ">
-                 <a  href="#Home"><FiHome className="h-8 w-8 " /></a>
-                 <div className="pl-4">
+              <li> <div className="firsticon group pt-2 pl-16 ">
+                 <a  href="#Home"><FiHome className="h-7 w-9 pl-2" /></a>
+                 <div className="pl-6">
                  <p className="paragraph group-hover:scale-100 ">Home</p>
                  </div>
                </div>
                </li>
-               <li className="pt-12"> 
+               <li className="pt-10"> 
                 <div className="firsticon group pt-2  ">
-                 <a  href="#Profile"><ImUser className="h-8 w-12 " /></a>
-                 <div className="pl-4">
+                 <a  href="#Profile"><ImUser className="h-7 w-10 pl-3 " /></a>
+                 <div className="pl-7">
                  <p className="paragraph group-hover:scale-100 ">Profile</p>
                  </div>           </div>
                </li>
-               <li className="pt-80"> 
+               <li className="pt-10"> 
                 <div className="firsticon group pt-2  ">
                  <a  href="#About"><ImShocked className="h-8 w-12 " /></a>
                  <div className="pl-4">
@@ -74,7 +64,7 @@ function Nav(){
           </div>
       </div>
     </div>:
-  <div className="relative w-40 right-0  bg-slate-950 ">
+  <div className="relative w-40 right-0  bg-slate-950 " >
   <div className="fixed top-0 left-2 right-100">
   <div className="pl-4 pt-4 text-white relative flex item-center justify-center">
       <button className=" text-blue-500 group hover:bg-blue-600 hover:rounded-full h-12 w-12 hover:text-white pt-3"onClick={handleShow}>
@@ -96,13 +86,17 @@ function Nav(){
               <p className="paragraph group-hover:scale-100 ">Exit</p>
               </div>
             </button>
+            <div>
+  </div>
             </div>
         }
      
        </div>
+   
   </div>
   </nav> 
-  { Component }
+  
+  
     </>
   
   )

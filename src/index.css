@@ -4,10 +4,10 @@
 
 @layer components{
     .control {
-      @apply   bg-gray-800 h-screen   pl-6 pt-20 
+      @apply   bg-gray-800 h-screen   pl-6 pt-10 
     }
     .firsticon{
-      @apply  relative flex items-center justify-center bg-gray-700  text-green-400 rounded-full h-16 w-12 
+      @apply  relative flex items-center justify-center bg-gray-700  text-green-400 rounded-full h-16 w-16 
               hover:bg-emerald-500
               hover:rounded-lg hover:text-white pl-16 pb-4
     }
@@ -17,8 +17,9 @@
    .view{
     @apply  h-screen bg-slate-950 w-screen text-white 
    }
+   
    .secondicon{
-    @apply  relative flex items-center justify-center bg-gray-700  text-green-400 rounded-full h-16 w-12 
+    @apply  relative flex items-center justify-center bg-gray-700  text-green-500 rounded-full h-16 w-12 
             hover:bg-emerald-500
             hover:rounded-lg hover:text-white pl-12  pt-8
    }
