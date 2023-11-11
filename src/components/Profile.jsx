@@ -57,7 +57,7 @@ const spanStyle = {
              </h1>
              </div>
              <div className="relative flex items-center justify-center h-screen shadow-lg " key={index}>
-                     <div className=" h-[42rem]  w-[40rem]  bg-no-repeat relative flex  items-center justify-center  pt-3 shadow-lg shadow-purple-400/100" style={{ 'backgroundImage': `url(${slideImage.url})` }}>
+                     <div className=" h-[40rem]  w-[30rem]  bg-no-repeat relative flex  items-center justify-center  pt-3 shadow-lg shadow-purple-400/100" style={{ 'backgroundImage': `url(${slideImage.url})` }}>
                          <a className="text-blue-600 font-mono text-7xl hover:text-cyan-400 " href={slideImage.link}>{slideImage.caption}</a>
                      </div>
                  </div></>
