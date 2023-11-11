@@ -43,7 +43,7 @@ function Home(){
          
         </div>
         <div className =" pb-60 relative flex items-center justify-center bg-slate-950 h-screen">
-            <a href="#Profile"><button className="  h-40 w-96 text-blue-800 text-7xl font-serif rounded-full bg-violet-500 hover:bg-green-500  hover:text-white hover:rounded-lg">Profile</button></a>
+            <a href="#Profile"><button className="  h-40 w-80 text-black text-7xl font-serif rounded-none font-bold bg-green-500 hover:bg-violet-500  hover:text-blue-800 hover:font-bold hover:rounded-lg">Profile</button></a>
         </div>
       </>
     )

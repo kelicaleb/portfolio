@@ -14,6 +14,7 @@ import About from './About'
 
 function Nav(){
   const [ show, setShow ] = useState(false)
+  // This sets the opposite value of show 
   const handleShow = () => 
   {
     setShow(!show)
@@ -46,8 +47,8 @@ function Nav(){
                  </div>           </div>
                </li>
                <li className="pt-10"> 
-                <div className="firsticon group pt-2  ">
-                 <a  href="#About"><ImShocked className="h-8 w-12 " /></a>
+                <div className="firsticon group pt-4 pr-1  ">
+                 <a  href="#About"><ImShocked className="h-7 w-10 " /></a>
                  <div className="pl-4">
                  <p className="paragraph group-hover:scale-100 ">About</p>
                  </div>           </div>
@@ -64,6 +65,7 @@ function Nav(){
           </div>
       </div>
     </div>:
+    /* renders everytime show is false*/
   <div className="relative w-40 right-0  bg-slate-950 " >
   <div className="fixed top-0 left-2 right-100">
   <div className="pl-4 pt-4 text-white relative flex item-center justify-center">
