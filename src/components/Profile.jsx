@@ -1,7 +1,7 @@
 import React from 'react'
 import 'react-slideshow-image/dist/styles.css'
 import './mystyle.css'
-import { Fade, Slide, Zoom } from 'react-slideshow-image';
+import { Fade, Slide, Zoom} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import Deer from './Deer.jpg'
 import Comp from './Comp.jpg'
@@ -45,10 +45,10 @@ const spanStyle = {
   ];
   const Profile = () => {
     return (
-     <div  id="Profile"className="bg-slate-950">
+     <div  id="Profile"className="bg-slate-950  h-screen w-screen">
       
          <div>
-        <Slide>
+         <Slide>
          {slideImages.map((slideImage, index)=> (
             <>
             <div>
@@ -62,7 +62,7 @@ const spanStyle = {
                      </div>
                  </div></>
           ))} 
-        </Slide>
+            </Slide>
       </div>
      </div>
     )
