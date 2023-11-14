@@ -62,7 +62,7 @@ const spanStyle = {
                      </div>
                  </div></>
           ))} 
-            </Slide>
+          </Slide>
       </div>
      </div>
     )

@@ -38,20 +38,10 @@ function App() {
       <About id="About" />
       <Contact id="Contact" />
       <div className="text-green-400">
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter
-              .typeString("GeeksForGeeks")
-              .pauseFor(1000)
-              .deleteAll()
-              .typeString("Welcomes You")
-              .start()
-          } } />
       </div>
       {Component}
       <div>
       </div>
-      <button className="bg-blue-400" onClick={handleClick}>Click me</button>
     </div>
     <Nav /></>
 

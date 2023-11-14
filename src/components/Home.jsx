@@ -20,12 +20,20 @@ function Home(){
           <div className="text-7xl text-center text-green-500 font-sans">
           <Typewriter className="font-mono text-green-400"
             onInit={(typewriter) => {
-              typewriter
+              let i = 1 
+                while( i < 4)
+                {
+                  i += 1
+                  typewriter
                 .typeString("Caleb Kavindu Keli")
-                .pauseFor(1000)
+                .pauseFor(2000)
                 .deleteAll()
                 .typeString("Welcomes You")
-                .start();
+                .start()
+                .pauseFor(7000)
+                .deleteAll()
+                .pauseFor(2000)
+                }
                }}
              />  
           </div>
