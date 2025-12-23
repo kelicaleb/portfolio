@@ -1,27 +1,9 @@
 "use client";
 
-import React, { useState, useRef } from "react";
-//new code 
+import React from "react";
+import Image from "next/image";
 
 const Hero = () => {
-  const [profileImage, setProfileImage] = useState<string | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
-
-  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setProfileImage(reader.result as string);
-      };
-      reader.readAsDataURL(file);
-    }
-  };
-
-  const handleImageClick = () => {
-    fileInputRef.current?.click();
-  };
-
   return (
     <section
       id="home"
@@ -127,74 +109,24 @@ const Hero = () => {
           <div className="flex-shrink-0">
             <div className="glass-card p-8">
               <div
-                onClick={handleImageClick}
-                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden cursor-pointer group"
+                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full"
                 style={{
                   background:
                     "linear-gradient(135deg, #06b6d4, #14b8a6, #0891b2)",
                   padding: "4px",
                 }}
               >
-                <div className="w-full h-full rounded-full overflow-hidden bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
-                  {profileImage ? (
-                    <img
-                      src={profileImage}
-                      alt="Profile"
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <div className="text-center p-8">
-                      <svg
-                        className="w-16 h-16 mx-auto text-slate-400 dark:text-slate-500 mb-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={1.5}
-                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                        />
-                      </svg>
-                      <p className="text-slate-500 dark:text-slate-400 text-sm">
-                        Click to upload
-                        <br />
-                        profile picture
-                      </p>
-                    </div>
-                  )}
-                  {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-full">
-                    <svg
-                      className="w-12 h-12 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                    </svg>
-                  </div>
+                <div className="relative w-full h-full rounded-full overflow-hidden bg-slate-100 dark:bg-slate-800">
+                  <Image
+                    src="/pic.jpeg"
+                    alt="Caleb - Full Stack Developer"
+                    fill
+                    sizes="(max-width: 768px) 256px, 320px"
+                    className="object-cover object-top"
+                    priority
+                  />
                 </div>
               </div>
-              <input
-                ref={fileInputRef}
-                type="file"
-                accept="image/*"
-                onChange={handleImageUpload}
-                className="hidden"
-              />
             </div>
           </div>
         </div>
