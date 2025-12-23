@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -117,13 +116,11 @@ const Hero = () => {
                 }}
               >
                 <div className="relative w-full h-full rounded-full overflow-hidden bg-slate-100 dark:bg-slate-800">
-                  <Image
-                    src="/pic.jpeg"
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={process.env.NEXT_PUBLIC_BASE_PATH ? `${process.env.NEXT_PUBLIC_BASE_PATH}/pic.jpeg` : "/pic.jpeg"}
                     alt="Caleb - Full Stack Developer"
-                    fill
-                    sizes="(max-width: 768px) 256px, 320px"
-                    className="object-cover object-top"
-                    priority
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
               </div>
