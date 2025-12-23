@@ -1,14 +1,15 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
   reactCompiler: true,
   output: "export",
   images: {
     unoptimized: true,
   },
-  // Change this to your GitHub repo name if not using custom domain
-  // basePath: "/your-repo-name",
-  // assetPrefix: "/your-repo-name",
+  basePath: isProd ? "/portfolio" : "",
+  assetPrefix: isProd ? "/portfolio" : "",
 };
 
 export default nextConfig;
