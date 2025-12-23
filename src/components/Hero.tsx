@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef } from "react";
+//new code 
 
 const Hero = () => {
   const [profileImage, setProfileImage] = useState<string | null>(null);
